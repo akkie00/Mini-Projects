@@ -1,0 +1,32 @@
+#modal-container{
+    /* align-self: center; */
+    align-content: center;  
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0.1, 0.2, 0.9);
+    display: none;  
+}
+
+#modal{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    /* background-color: rgba(0, 0.1, 0.2, 0.9); */
+    max-width: 80%;
+    /* place-self: center; */
+    display: grid;
+    padding:  0px 10px 10px 10px;
+    grid-row-gap: 5px;
+    grid-template-rows: auto 1fr auto;
+}
+
+#close-modal{
+    justify-self: right;
+    font-size: xx-large;
+}
+
+#close-modal, #modal-action{
+    cursor: pointer;
+}

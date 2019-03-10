@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal</title>
+    <link rel="stylesheet" href="modal.css">
+    <script src="modal.js"></script>
+</head>
+
+<body>
+    <div id="modal-container" onclick="toggleModal()">
+        <div id="modal" onclick="event.stopPropagation()">
+            <div id="close-modal" onclick="toggleModal()">&times;</div>
+            <div id="modal-content">
+                <h1>This is a Modal.</h1>
+                <h2>Help yourself out!</h2>
+            </div>
+            <div id="modal-action">
+                <button onclick="toggleModal()">Save</button>
+            </div>
+        </div>
+    </div>
+    <button onclick="toggleModal()">Show the Modal</button>
+</body>
+
+</html>

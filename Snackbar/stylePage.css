@@ -1,0 +1,45 @@
+body{
+    margin: 0%; 
+    /* background-color: black; */
+}
+
+#notification{
+    align-items: center;
+    justify-content: center;
+    border-radius: 1%;
+    display: grid;
+    width: 200px;
+    transform: translateY(200px);
+}
+#notification-container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+
+}
+@keyframes slide-up{
+    0%{
+        transform: translateY(200px);
+    }
+    20%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}
+
+.offline, .online{
+    animation: slide-up 3s; 
+}
+.online {
+    background-color: rgb(114, 219, 114)
+}
+
+.offline{
+    background-color: rgb(233, 19, 19)
+}
